@@ -43,10 +43,6 @@ function createStartAgain() {
   newBtn.innerText = 'Start Again'
 
   controls.appendChild(newBtn)
-  started = false
-  ended = false
-  curQuestion = 0
-  correctAnswers = 0
   newBtn.addEventListener('click', startQuiz)
 }
 
@@ -68,6 +64,10 @@ function createStartEndBtn() {
   controls.appendChild(start)
   controls.appendChild(end)
   controls.removeChild(removeBtn)
+  started = false
+  ended = false
+  curQuestion = 0
+  correctAnswers = 0
 }
 
 //Calculating Animation
